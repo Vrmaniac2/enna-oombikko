@@ -15,7 +15,7 @@ RUN apt update && apt upgrade -y
 # Okteto CLI
 RUN apt install nmap -y
 # changing workdir
-WORKDIR $DIR
+WORKDIR "/root/TeamUltroid"
 COPY requirements.txt .
 RUN pip install -r requirements.txt
 COPY installer.sh .
